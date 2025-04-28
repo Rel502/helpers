@@ -132,3 +132,5 @@ function hideSpinner() {
     container.classList.add('d-none');
     toggleScrollbar('show');
 }
+
+
