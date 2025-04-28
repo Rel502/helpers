@@ -144,3 +144,15 @@ function formattPrice(number) {
     let fixedNumber = number.toFixed(2);
     return fixedNumber.replace('.', ',');
 }
+
+
+/**
+ * This function is used to return the value of a given input element
+ * 
+ * @param {string} id 
+ * @returns - the value of the user input
+ */
+function getInput(id) {
+    let value = document.getElementById(id);
+    return value.trim();
+}
