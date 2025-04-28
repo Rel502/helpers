@@ -89,3 +89,25 @@ function convertFirstLetterUp(string) {
 
     return firstLetter + elseLetters;
 }
+
+
+/**
+ * This function is used to show a loading spinner and enables the body scrollbar
+ * 
+ */
+function showSpinner() {
+    let container = document.getElementById('loadingSpinner');
+    container.classList.remove('d-none');
+    toggleScrollbar('hide');
+}
+
+
+/**
+ * This function is used to hide a loading spinner and disables the body scrollbar
+ * 
+ */
+function hideSpinner() {
+    let container = document.getElementById('loadingSpinner');
+    container.classList.add('d-none');
+    toggleScrollbar('show');
+}
