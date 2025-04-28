@@ -23,10 +23,10 @@ function toggleButton(id, state) {
  * This function is used to show or hide a popup
  * 
  * @param {string} popupId - the ID of the popup element
- * @param {string} param - the state that the popup should assume (hide or show)
+ * @param {string} state - the state that the popup should assume (hide or show)
  */
-function togglePopup(popupId, param) {
-    if (param == 'show') {
+function togglePopup(popupId, state) {
+    if (state == 'show') {
         document.getElementById(popupId).classList.remove('d-none');
     } else {
         document.getElementById(popupId).classList.add('d-none');
@@ -45,3 +45,17 @@ document.addEventListener("click", (event) => {
         closePopup();
     }
 });
+
+
+/**
+ * This function is used to toggle the visibility of the header
+ * 
+ * @param {string} state - the state that the header should assume (hide or show)
+ */
+function toggleHeader(state) {
+    if (state == 'show') {
+        document.querySelector('header').classList.remove('d-none');
+    } else {
+        document.querySelector('header').classList.add('d-none');
+    }
+}
