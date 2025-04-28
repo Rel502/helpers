@@ -32,3 +32,16 @@ function togglePopup(popupId, param) {
         document.getElementById(popupId).classList.add('d-none');
     }
 }
+
+
+/**
+ * This function is used to close a popup, if user clicks outside the popup content
+ * 
+ */
+document.addEventListener("click", (event) => {
+    let window = document.getElementById('popupOverlayBg');
+
+    if (event.target == window) {
+        closePopup();
+    }
+});
