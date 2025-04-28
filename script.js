@@ -73,3 +73,19 @@ function toggleScrollbar(state) {
         document.querySelector('body').classList.add('overflow-hidden');
     }
 }
+
+
+/**
+ * This function is used to convert the first character of a string to upper case
+ * 
+ * @param {string} string 
+ * @returns - the converted string with first character in upper case
+ */
+function convertFirstLetterUp(string) {
+    let stringInUpperCase = string.toUpperCase();
+
+    let firstLetter = stringInUpperCase.slice(0, 1);
+    let elseLetters = string.slice(1);
+
+    return firstLetter + elseLetters;
+}
