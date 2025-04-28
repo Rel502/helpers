@@ -3,7 +3,7 @@
  * This function is used to retrieve and parse an array from LocalStorage by key
  * 
  * @param {string} key 
- * @returns 
+ * @returns
  */
 function getArrayFromLocalStorage(key) {
     return JSON.parse(localStorage.getItem(key));

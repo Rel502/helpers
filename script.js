@@ -134,3 +134,13 @@ function hideSpinner() {
 }
 
 
+/**
+ * Formats a number to a price string with two decimals and a comma as decimal separator.
+ * 
+ * @param {number} number 
+ * @returns the price as a string
+ */
+function formattPrice(number) {
+    let fixedNumber = number.toFixed(2);
+    return fixedNumber.replace('.', ',');
+}
