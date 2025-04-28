@@ -59,3 +59,17 @@ function toggleHeader(state) {
         document.querySelector('header').classList.add('d-none');
     }
 }
+
+
+/**
+ * This function is used to toggle the visibility of the scrollbar of the body element
+ * 
+ * @param {string} state - the state that the scrollbar should assume (hide or show)
+ */
+function toggleScrollbar(state) {
+    if (state == 'show') {
+        document.querySelector('body').classList.remove('overflow-hidden');
+    } else {
+        document.querySelector('body').classList.add('overflow-hidden');
+    }
+}
