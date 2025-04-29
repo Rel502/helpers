@@ -1,6 +1,7 @@
-function init() {
-    console.log("läuft...");
-}
+/** Initializes the app once the DOM is fully loaded. */
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM ist bereit - Initialisierung läuft");
+});
 
 
 /**
