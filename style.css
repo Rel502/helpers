@@ -1,5 +1,18 @@
 
 
+.h-100 {
+    height: 100vh;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .d-none {
     display: none;

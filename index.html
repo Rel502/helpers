@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helpers</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./like_functionality.js"></script>
     <script src="./local_storage.js"></script>
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <button id="testBtn">Test</button>
-    <button onclick="toggleElement('testBtn', 'hide')">Toggle Test-Button</button>
+    <main class="flex-center h-100">
+        <img id="likeIcon" onclick="toggleLike()" class="pointer" src="./assets/img/icons/isntLiked.png" alt="Like">
 
-    <button onclick="toggleElement('testBtn', 'show')">Show Element</button>
+    </main>
 
-    <section id="content">
-        <p id="hello">hello!</p>
-    </section>
 </body>
 </html>
