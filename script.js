@@ -24,33 +24,18 @@ async function includeHTML() {
 
 
 /**
- * This function is used to toggle the visibility of a button
+ * This function is used to show or hide an html element
  * 
- * @param {string} id - the id of the button that shall be toggled
- * @param {string} state - The state that the button should assume (hide or show)
+ * @param {string} id - The id of a specified element
+ * @param {string} state - The state that the element should assume ('show' or 'hide')
  */
-function toggleButton(id, state) {
-    let button = document.getElementById(id);
-    
-    if (state == 'hide') {
-        button.classList.add('d-none');
-    } else if (state == 'show') {
-        button.classList.remove('d-none');
-    }
-}
+function toggleElement(id, state) {
+    let element = document.getElementById(id);
 
-
-/**
- * This function is used to show or hide a popup
- * 
- * @param {string} popupId - the ID of the popup element
- * @param {string} state - the state that the popup should assume (hide or show)
- */
-function togglePopup(popupId, state) {
     if (state == 'show') {
-        document.getElementById(popupId).classList.remove('d-none');
+        element.classList.remove('d-none');
     } else {
-        document.getElementById(popupId).classList.add('d-none');
+        element.classList.add('d-none');
     }
 }
 
@@ -137,12 +122,12 @@ function hideSpinner() {
 /**
  * Formats a number to a price string with two decimals and a comma as decimal separator.
  * 
- * @param {number} number 
+ * @param {number} price 
  * @returns the price as a string
  */
-function formattPrice(number) {
-    let fixedNumber = number.toFixed(2);
-    return fixedNumber.replace('.', ',');
+function formattPrice(price) {
+    let fixedPrice = price.toFixed(2);
+    return fixedPrice.replace('.', ',');
 }
 
 
